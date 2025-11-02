@@ -13,10 +13,10 @@
           ></v-img>
         </v-avatar>
         
-        <h1 class="text-white text-h5 font-weight-regular mb-2">
+        <h1 class="text-white text-h5 font-weight-medium mb-2"> <!-- Cambiado a medium -->
           Gonzalo Román Reyes
         </h1>
-        <p class="text-h6 text-grey-lighten-2 font-weight-light">
+        <p class="text-h6 text-grey-lighten-2 font-weight-regular"> <!-- Cambiado a regular -->
           Diseñador Gráfico Multimedia
         </p>
       </v-col>
@@ -29,29 +29,24 @@
           <!-- Sección de presentación -->
           <v-row align="start">
             <v-col cols="12" md="8">
-              <h2 class="text-h4 text-white font-weight-regular mb-4">Buen día!</h2>
+              <h2 class="text-h4 text-white font-weight-medium mb-4">Buen día!</h2> <!-- Cambiado a medium -->
               
-              <div class="text-body-1 text-grey-lighten-5 font-weight-regular  space-y-4">
+              <div class="text-body-1 text-grey-lighten-5 improved-readability space-y-4">
                 <p>
-                  Mi nombre es <strong class="text-white">Gonzalo</strong> y soy <strong class="text-white">Diseñador Gráfico Multimedia</strong> titulado en el Instituto Profesional de las artes ARCOS.
+                  Soy Gonzalo Román, Diseñador Gráfico Multimedia titulado en el Instituto Profesional de las artes ARCOS.
                 </p>
 
                 <p>
-                  Diseñador Web y Gráfico con enfoque UX/UI, especializado en el desarrollo de sitios autoadministrables en WordPress. Cuento con experiencia en la creación de identidades visuales y piezas gráficas para campañas de marketing digital.
+                  Mi trayectoria se ha centrado en el diseño web y gráfico con especialización en UX/UI, desarrollando principalmente sitios autoadministrables en WordPress. A lo largo de mi experiencia profesional, he trabajado en la creación de identidades visuales y piezas gráficas para diversas campañas de marketing digital.
                 </p>
 
                 <p>
-                  Mi formación en diseño UX/UI (Coderhouse) me permite combinar estética, funcionalidad y experiencia de usuario en cada proyecto. He trabajado con marcas de distintos rubros, ofreciendo soluciones integrales que abarcan desde la imagen corporativa hasta el diseño web responsive y accesible.
+                  La formación en diseño UX/UI obtenida en Coderhouse me ha permitido integrar principios de estética, funcionalidad y experiencia de usuario en cada proyecto. He colaborado con marcas de múltiples rubros, implementando soluciones integrales que abarcan desde el desarrollo de imagen corporativa hasta el diseño web responsive y accesible.
                 </p>
 
                 <p>
-                  He logrado aportar con mucha dedicación y profesionalismo mis conocimientos a una diversa cartera de clientes.
+                  Actualmente, estoy ampliando mis competencias técnicas mediante el programa Front End Trainee de Talento Digital. Esta formación representa un paso significativo en mi desarrollo profesional dentro del área TI, permitiéndome complementar mi background en diseño con habilidades sólidas en desarrollo frontend. Este portafolio evidencia la integración de ambos campos, aplicando los conocimientos técnicos adquiridos durante el programa.
                 </p>
-
-                <p>
-                  "Diseñador Gráfico Multimedia en constante evolución. Actualmente complemento mi experiencia con el curso de Front End Trainee en Talento Digital, donde este portafolio sintetiza la fusión entre diseño y desarrollo frontend adquirida durante la formación."
-                </p>
-
               </div>
             </v-col>
 
@@ -59,7 +54,7 @@
             <v-col cols="12" md="4">
               <!-- Especialidades -->
               <v-card class="glass-effect pa-4 rounded-lg mb-4" elevation="0">
-                <h3 class="text-h6 text-white font-weight-regular mb-3">Especialidades</h3>
+                <h3 class="text-h6 text-white font-weight-medium mb-3">Especialidades</h3> <!-- Cambiado a medium -->
                 <v-list density="compact" class="bg-transparent">
                   <v-list-item 
                     v-for="skill in skills" 
@@ -69,7 +64,7 @@
                     <template v-slot:prepend>
                       <v-icon icon="mdi-check-circle" color="green-lighten-2" size="small"></v-icon>
                     </template>
-                    <v-list-item-title class="text-body-2 text-grey-lighten-4">
+                    <v-list-item-title class="text-body-2 text-grey-lighten-4 improved-readability-item">
                       {{ skill }}
                     </v-list-item-title>
                   </v-list-item>
@@ -78,7 +73,7 @@
 
               <!-- Enlaces de contacto -->
               <v-card class="glass-effect pa-4 rounded-lg" elevation="0">
-                <h3 class="text-h6 text-white font-weight-regular mb-3">Contacto</h3>
+                <h3 class="text-h6 text-white font-weight-medium mb-3">Contacto</h3> <!-- Cambiado a medium -->
                 <div class="d-flex flex-column gap-2">
                   <v-btn 
                     color="white"
@@ -150,7 +145,6 @@ const skills = ref([
 
 <style scoped>
 .about-me-section {
-  /* Fondo sutil o puedes quitarlo completamente */
   background: transparent;
 }
 
@@ -183,37 +177,49 @@ const skills = ref([
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Mejoras de espaciado y tipografía */
+/* MEJORAS DE LEGIBILIDAD */
+.improved-readability {
+  line-height: 1.8 !important; /* Más espacio entre líneas */
+  font-weight: 400 !important; /* Peso regular para mejor lectura */
+  letter-spacing: 0.01em; /* Espaciado de letras sutil */
+}
+
+.improved-readability-item {
+  font-weight: 400 !important; /* Peso regular para items de lista */
+  letter-spacing: 0.01em;
+}
+
+/* Mejoras de espaciado */
 .space-y-4 > * + * {
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* Más espacio entre párrafos */
 }
 
-.text-body-1 {
-  line-height: 1.7;
-  font-weight: 300;
+/* Títulos con mejor jerarquía */
+.text-h4 {
+  font-weight: 500 !important; /* Medium para títulos principales */
 }
 
-/* Opacidades para texto sutil */
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-70 {
-  opacity: 0.7;
-}
-
-.opacity-90 {
-  opacity: 0.9;
+.text-h5, .text-h6 {
+  font-weight: 500 !important; /* Medium para subtítulos */
 }
 
 /* Efectos hover sutiles */
-.quote-card, .content-card {
+.content-card {
   transition: all 0.3s ease;
 }
 
-.quote-card:hover, .content-card:hover {
+.content-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Mejora el contraste para mejor accesibilidad */
+.text-grey-lighten-5 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.text-grey-lighten-4 {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 </style>
