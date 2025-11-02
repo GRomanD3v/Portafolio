@@ -1,5 +1,5 @@
 <template>
-  <v-container class="py-2 about-me-section">
+  <v-container class="pt-2 pb-16 about-me-section">
     <!-- Encabezado con foto -->
     <v-row justify="center" class="mb-6">
       <v-col cols="12" class="text-center">
