@@ -6,6 +6,7 @@ import { useAuthStore } from "../stores/auth";
 import Header from "../components/Header.vue";
 import { useProyectoStore } from "../stores/project"; 
 import Footer from "../components/Footer.vue";
+import AboutMe from "../components/AboutMe.vue";
 
 // 1. Inicialización y Reactividad
 const authStore = useAuthStore();
@@ -72,11 +73,14 @@ const proyectosListos = computed(() => {
 
   <!-- v-main es necesario para que el contenido se muestre debajo del v-app-bar -->
   <v-main class="bg">
-    <v-container class="py-10">
-      <h2 class="text-center text-white text-h3 font-weight-bold mb-10">
+    <!-- Sección Sobre Mí -->
+    <AboutMe />
+    <v-divider class="my-10"></v-divider>
+     <!-- Sección Proyectos -->
+    <v-container class="pt-16 pb-10">
+      <h2 class="text-center text-white text-h3 font-weight-regular mb-12">
         Mis Proyectos Destacados
       </h2>
-      <v-divider class="mb-10"></v-divider>
 
       <!-- PANTALLA DE CARGA (Vuetify) -->
       <v-row v-if="isLoading" justify="center" class="py-10">
@@ -175,7 +179,7 @@ const proyectosListos = computed(() => {
 
 .bg {
   width: 100%;
-  background: linear-gradient(to top, #3c006b, #03a590);
+  background: linear-gradient(to top, #1a012d, #03a590);
   color: white;
   padding: 7rem 2rem 4rem 2rem;
 }

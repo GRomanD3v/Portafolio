@@ -35,7 +35,8 @@ const goToHome = () => {
     <v-app-bar 
         color="teal-darken-4" 
         flat 
-        density="compact"
+        density="comfortable"
+        height="80"
     >
         <v-container class="d-flex align-center py-4">
             <img src="https://groman.cl/wp-content/uploads/2023/11/logo-2023.png" alt="Logo de la empresa" width="auto" height="30">
