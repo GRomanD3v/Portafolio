@@ -8,6 +8,8 @@ import { useProyectoStore } from "../stores/project";
 import Footer from "../components/Footer.vue";
 import AboutMe from "../components/AboutMe.vue";
 
+import bgImage from '@/assets/img/g-bg.png';
+
 // 1. Inicialización y Reactividad
 const authStore = useAuthStore();
 const projectStore = useProyectoStore(); 
@@ -72,7 +74,7 @@ const proyectosListos = computed(() => {
   <Header :user-name="userNameDisplay" @logout="handleLogout" />
 
   <!-- v-main es necesario para que el contenido se muestre debajo del v-app-bar -->
-  <v-main class="bg">
+  <v-main class="bg" :style="{ backgroundImage: `url(${bgImage})` }">
     <!-- Sección Sobre Mí -->
     <AboutMe />
     <v-divider class="my-10"></v-divider>
@@ -180,7 +182,6 @@ const proyectosListos = computed(() => {
 .bg {
   width: 100%;
   background: linear-gradient(to top, #1a012d, #014038);
-  background-image: url(src/assets/img/g-bg.png);
   background-size: cover;
 }
 

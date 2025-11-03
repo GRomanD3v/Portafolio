@@ -4,6 +4,8 @@ import { useAuthStore } from '../stores/auth';
 import { storeToRefs } from 'pinia';
 import { useRouter } from 'vue-router';
 
+import bgImage from '@/assets/img/g-bg.png';
+
 // 1. Inicializar Store
 const authStore = useAuthStore();
 const router = useRouter();
@@ -35,7 +37,7 @@ const handleLogin = async () => {
         El v-main y v-container con la clase fill-height aseguran que el formulario 
         se centre perfectamente en la pantalla.
     -->
-    <v-main>
+    <v-main :style="{ backgroundImage: `url(${bgImage})` }">
         <v-container fluid class="fill-height justify-center pa-4">
             <!-- La tarjeta de login, con ancho máximo y sombra -->
             <v-card 
@@ -137,7 +139,6 @@ const handleLogin = async () => {
     height: 100vh;
     width: 100vw;
     background-color: rgb(2, 41, 52); 
-    background-image: url(src/assets/img/g-bg.png);
     background-size: cover;
 }
 

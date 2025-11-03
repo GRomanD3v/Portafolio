@@ -4,6 +4,8 @@ import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/auth';
 import { storeToRefs } from 'pinia'; // Necesario para 'loading' del store
 
+import bgImage from '@/assets/img/g-bg.png';
+
 const router  = useRouter();
 // 1. Iniciar el Store
 const authStore = useAuthStore();
@@ -52,7 +54,7 @@ const handleRegister = async () => {
     <!-- 
         Estructura de Vuetify para centrar el formulario y aplicar el fondo gris.
     -->
-    <v-main>
+    <v-main :style="{ backgroundImage: `url(${bgImage})` }">
         <v-container fluid class="fill-height justify-center pa-4">
             <!-- La tarjeta de registro -->
             <v-card 
@@ -176,7 +178,6 @@ const handleRegister = async () => {
     height: 100vh;
     width: 100vw;
     background-color: rgb(2, 41, 52); 
-    background-image: url(src/assets/img/g-bg.png);
     background-size: cover;
 }
 
