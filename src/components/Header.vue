@@ -33,16 +33,16 @@ const goToHome = () => {
 
 <template>
     <v-app-bar 
-        color="teal-darken-4" 
+        color="teal-lighten-5" 
         flat 
         density="comfortable"
         height="80"
     >
         <v-container class="d-flex align-center py-4">
-            <img src="https://groman.cl/wp-content/uploads/2023/11/logo-2023.png" alt="Logo de la empresa" width="auto" height="30">
+            <img src="https://groman.cl/wp-content/uploads/2023/11/logo-2023.png" alt="Logo" width="auto" height="50">
 
-            <v-toolbar-title class="font-weight-bold text-h6 me-4 mx-3">
-          Portafolio Proyectos
+            <v-toolbar-title class="font-weight-medium text-h6 me-4 mx-3">
+          Portafolio
             </v-toolbar-title>
             
             <v-spacer></v-spacer>
@@ -74,10 +74,11 @@ const goToHome = () => {
                 </v-btn>
                 
                 <span class="mx-3 text-subtitle-2 d-none d-sm-inline">
-                    Bienvenido, <strong class="text-amber">{{ userName }}</strong>
+                    Bienvenido a mi portafolio, <strong class="text-green">{{ userName }}</strong>
                 </span>
 
                 <v-btn
+                    v-if="isAuthenticated && isAdmin && !isInAdminView"
                     @click="$emit('logout')"
                     color="error"
                     variant="flat"

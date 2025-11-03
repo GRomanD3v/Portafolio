@@ -57,7 +57,7 @@ const handleRegister = async () => {
             <!-- La tarjeta de registro -->
             <v-card 
                 class="pa-6 elevation-12 rounded-lg" 
-                max-width="450" 
+                max-width="600" 
                 width="100%"
             >
                 <!-- Header -->
@@ -175,7 +175,9 @@ const handleRegister = async () => {
 .v-main {
     height: 100vh;
     width: 100vw;
-    background-color: #f0f2f5; 
+    background-color: rgb(2, 41, 52); 
+    background-image: url(src/assets/img/g-bg.png);
+    background-size: cover;
 }
 
 .v-card-title {

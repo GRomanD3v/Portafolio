@@ -78,8 +78,8 @@ const proyectosListos = computed(() => {
     <v-divider class="my-10"></v-divider>
      <!-- Sección Proyectos -->
     <v-container class="pt-16 pb-10">
-      <h2 class="text-center text-white text-h3 font-weight-regular mb-12">
-        Mis Proyectos Destacados
+      <h2 class="text-center text-white text-h4 font-weight-bold mb-12">
+        Mis Proyectos
       </h2>
 
       <!-- PANTALLA DE CARGA (Vuetify) -->
@@ -179,9 +179,9 @@ const proyectosListos = computed(() => {
 
 .bg {
   width: 100%;
-  background: linear-gradient(to top, #1a012d, #03a590);
-  color: white;
-  padding: 7rem 2rem 4rem 2rem;
+  background: linear-gradient(to top, #1a012d, #014038);
+  background-image: url(src/assets/img/g-bg.png);
+  background-size: cover;
 }
 
 .project-card {

@@ -6,16 +6,15 @@
   <v-footer app class="animated-footer text-center d-flex flex-column py-1">
     <v-container>
       <p class="text-white mb-0 text-body-2">
-        Desarrollado por <strong>Gonzalo Román</strong> — Examen Final Módulo 8 —
-        <strong>FrontEnd Trainee 2025</strong>
-      </p>
+        Desarrollado por <strong>Gonzalo Román 2025 &copy; </strong> <br> VueJS - Vuetify - Firebase - Firestore - <strong>FrontEnd Trainee 2025</strong><br/>
+     </p>
     </v-container>
   </v-footer>
 </template>
 
 <style scoped>
 .animated-footer {
-  background: linear-gradient(-45deg, #3c006b, #03a590, #2196f3, #4caf50);
+  background: linear-gradient(-45deg, #3c006b, #03a590, #012b4d, #4caf50);
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
 }

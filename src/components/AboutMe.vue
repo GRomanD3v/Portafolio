@@ -1,27 +1,5 @@
 <template>
   <v-container class="pt-2 pb-16 about-me-section">
-    <!-- Encabezado con foto -->
-    <v-row justify="center" class="mb-6">
-      <v-col cols="12" class="text-center">
-        <!-- Foto de perfil -->
-        <v-avatar size="140" class="mb-4">
-          <v-img
-            src="https://groman.cl/wp-content/uploads/2025/05/g2.png"
-            alt="Gonzalo Román Reyes"
-            cover
-            class="profile-image"
-          ></v-img>
-        </v-avatar>
-        
-        <h1 class="text-white text-h5 font-weight-medium mb-2"> <!-- Cambiado a medium -->
-          Gonzalo Román Reyes
-        </h1>
-        <p class="text-h6 text-grey-lighten-2 font-weight-regular"> <!-- Cambiado a regular -->
-          Diseñador Gráfico Multimedia
-        </p>
-      </v-col>
-    </v-row>
-
     <!-- Contenido principal -->
     <v-row justify="center">
       <v-col cols="12" lg="10">
@@ -29,19 +7,24 @@
           <!-- Sección de presentación -->
           <v-row align="start">
             <v-col cols="12" md="8">
-              <h2 class="text-h4 text-white font-weight-medium mb-4">Buen día!</h2> <!-- Cambiado a medium -->
-              
               <div class="text-body-1 text-grey-lighten-5 improved-readability space-y-4">
+
+                 <v-avatar size="140" class="mb-4">
+          <v-img
+            src="https://groman.cl/wp-content/uploads/2025/05/g2.png"
+            alt="Gonzalo Román Reyes"
+            cover
+            class="profile-image"
+          ></v-img>
+        </v-avatar>
+                <h2 class="text-h4 text-white font-weight-medium mb-4">Buen día!</h2>
+              
                 <p>
                   Soy Gonzalo Román, Diseñador Gráfico Multimedia titulado en el Instituto Profesional de las artes ARCOS.
                 </p>
 
                 <p>
                   Mi trayectoria se ha centrado en el diseño web y gráfico con especialización en UX/UI, desarrollando principalmente sitios autoadministrables en WordPress. A lo largo de mi experiencia profesional, he trabajado en la creación de identidades visuales y piezas gráficas para diversas campañas de marketing digital.
-                </p>
-
-                <p>
-                  La formación en diseño UX/UI obtenida en Coderhouse me ha permitido integrar principios de estética, funcionalidad y experiencia de usuario en cada proyecto. He colaborado con marcas de múltiples rubros, implementando soluciones integrales que abarcan desde el desarrollo de imagen corporativa hasta el diseño web responsive y accesible.
                 </p>
 
                 <p>
@@ -73,8 +56,8 @@
 
               <!-- Enlaces de contacto -->
               <v-card class="glass-effect pa-4 rounded-lg" elevation="0">
-                <h3 class="text-h6 text-white font-weight-medium mb-3">Contacto</h3> <!-- Cambiado a medium -->
-                <div class="d-flex flex-column gap-2">
+                <h3 class="text-h6 text-white font-weight-medium mb-2">Contacto</h3> <!-- Cambiado a medium -->
+                <div class="d-flex flex-column gap-4">
                   <v-btn 
                     color="white"
                     variant="outlined"
@@ -82,7 +65,7 @@
                     href="https://www.linkedin.com/in/gonzalo-r-r/"
                     target="_blank"
                     size="small"
-                    class="glass-button"
+                    class="glass-button mb-2"
                   >
                     LinkedIn
                   </v-btn>
@@ -93,7 +76,7 @@
                     href="https://github.com/GRomanD3v"
                     target="_blank"
                     size="small"
-                    class="glass-button"
+                    class="glass-button mb-2"
                   >
                     GitHub
                   </v-btn>
@@ -103,7 +86,7 @@
                     prepend-icon="mdi-email"
                     href="mailto:hola@groman.cl"
                     size="small"
-                    class="glass-button"
+                    class="glass-button mb-2"
                   >
                     Email
                   </v-btn>
@@ -114,7 +97,7 @@
                     href="https://groman.cl/wp-content/uploads/2025/11/gr_cv25.pdf"
                     target="_blank"
                     size="small"
-                    class="glass-button"
+                    class="glass-button mb-2"
                   >
                     Descargar CV
                   </v-btn>

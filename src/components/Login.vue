@@ -40,13 +40,13 @@ const handleLogin = async () => {
             <!-- La tarjeta de login, con ancho máximo y sombra -->
             <v-card 
                 class="pa-6 elevation-12 rounded-lg" 
-                max-width="450" 
+                max-width="600" 
                 width="100%"
             >
                 <!-- Header -->
                 <div class="text-center mb-6">
                     <!-- Vuetify usa v-card-title o v-card-subtitle para el texto -->
-                    <v-card-title class="text-h4 font-weight-bold text-indigo-darken-3 mb-1 justify-center">
+                    <v-card-title class="text-h4 font-weight-bold text-teal-darken-4 mb-1 justify-center">
                         <!-- Imagen (si existe en /groman.png) y texto -->
                         <img src="/groman.png" alt="Logo de Gonzalo Román" style="height: 40px; margin-right: 8px; vertical-align: middle;"> 
                         PORTAFOLIO
@@ -99,7 +99,7 @@ const handleLogin = async () => {
                     <!-- Botón Login -->
                     <v-btn
                         type="submit"
-                        color="indigo-darken-3"
+                        color="teal-darken-4"
                         size="large"
                         block
                         :loading="loading" 
@@ -118,7 +118,7 @@ const handleLogin = async () => {
                         ¿No tienes cuenta?
                         <router-link
                             to="/register"
-                            class="text-indigo-darken-3 font-weight-bold text-decoration-none"
+                            class="teal-accent-3font-weight-bold text-decoration-none"
                         >
                             Regístrate aquí
                         </router-link>
@@ -136,8 +136,9 @@ const handleLogin = async () => {
 .v-main {
     height: 100vh;
     width: 100vw;
-    /* CAMBIO: Usamos el color gris uniforme que se asemeja al fondo de tu captura. */
-    background-color: #f0f2f5; 
+    background-color: rgb(2, 41, 52); 
+    background-image: url(src/assets/img/g-bg.png);
+    background-size: cover;
 }
 
 .v-card-title {
